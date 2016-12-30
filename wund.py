@@ -12,10 +12,12 @@ password="password"
 #enable (1) if using a BMP085 pressure sensor
 BMP=1
 
+######
+## End of configurable values
+######
+
+if BMP=1: 
 	import Adafruit_BMP.BMP085 as BMP085
-
-
-
 
 #wind speed: 2 kph, wind direction: 225.0°, rain gauge: 0.00 in.
 #wind speed: 2 kph, temp: 60.4° F, humidity: 70% RH
